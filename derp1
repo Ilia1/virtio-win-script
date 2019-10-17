@@ -13,7 +13,11 @@ pnputil -i -a E:\qxldod\2k16\amd64\qxldod.inf
 pnputil -i -a E:\qemupciserial\2k16\amd64\qemupciserial.inf
 pnputil -i -a E:\qemufwcfg\2k16\amd64\qemufwcfg.inf
 pnputil -i -a E:\balloon\2k16\amd64\balloon.inf
+mkdir "c:\program files\balloon"
+copy e:\balloon\2k16\amd64\*.* "c:\program files\balloon\"
+"c:\program files\balloon\blnsvr.exe" -i
 
+##win10 with iso file extracted to c:\temp\virtio\
 pnputil -i -a c:\temp\virtio\amd64\w10\vioscsi.inf
 pnputil -i -a c:\temp\virtio\w10\amd64\netkvm.inf
 pnputil -i -a c:\temp\virtio\amd64\w10\viostor.inf
@@ -25,3 +29,6 @@ pnputil -i -a c:\temp\virtio\qxldod\w10\amd64\qxldod.inf
 pnputil -i -a c:\temp\virtio\qemupciserial\w10\amd64\qemupciserial.inf
 pnputil -i -a c:\temp\virtio\qemufwcfg\w10\amd64\qemufwcfg.inf
 pnputil -i -a c:\temp\virtio\balloon\w10\amd64\balloon.inf
+mkdir "c:\program files\balloon"
+copy c:\temp\virtio\balloon\w10\amd64\*.* "c:\program files\balloon\"
+"c:\program files\balloon\blnsvr.exe" -i
