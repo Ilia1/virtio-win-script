@@ -1,0 +1,27 @@
+easiest way to install inf files from the virtio driver iso mount the iso a e drive for the top one (server 2016 example)  or extract the iso to c:\temp for bottom one (windows 10 example)
+
+https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.172-1/virtio-win-0.1.172.iso
+
+pnputil -i -a E:\pvpanic\2k16\amd64\pvpanic.inf
+pnputil -i -a E:\netkvm\2k16\amd64\netkvm.inf
+pnputil -i -a E:\viostor\2k16\amd64\viostor.inf
+pnputil -i -a E:\vioserial\2k16\amd64\vioser.inf
+pnputil -i -a E:\vioscsi\2k16\amd64\vioscsi.inf
+pnputil -i -a E:\viorng\2k16\amd64\viorng.inf
+pnputil -i -a E:\vioinput\2k16\amd64\vioinput.inf
+pnputil -i -a E:\qxldod\2k16\amd64\qxldod.inf
+pnputil -i -a E:\qemupciserial\2k16\amd64\qemupciserial.inf
+pnputil -i -a E:\qemufwcfg\2k16\amd64\qemufwcfg.inf
+pnputil -i -a E:\balloon\2k16\amd64\balloon.inf
+
+pnputil -i -a c:\temp\virtio\amd64\w10\vioscsi.inf
+pnputil -i -a c:\temp\virtio\w10\amd64\netkvm.inf
+pnputil -i -a c:\temp\virtio\amd64\w10\viostor.inf
+pnputil -i -a c:\temp\virtio\virtioserial\w10\amd64\vioser.inf
+pnputil -i -a c:\temp\virtio\vioscsi\w10\amd64\vioscsi.inf
+pnputil -i -a c:\temp\virtio\viorng\w10\amd64\viorng.inf
+pnputil -i -a c:\temp\virtio\vioinput\w10\amd64\vioinput.inf
+pnputil -i -a c:\temp\virtio\qxldod\w10\amd64\qxldod.inf
+pnputil -i -a c:\temp\virtio\qemupciserial\w10\amd64\qemupciserial.inf
+pnputil -i -a c:\temp\virtio\qemufwcfg\w10\amd64\qemufwcfg.inf
+pnputil -i -a c:\temp\virtio\balloon\w10\amd64\balloon.inf
